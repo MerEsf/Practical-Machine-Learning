@@ -9,7 +9,7 @@ The data for this project come from this source: http://web.archive.org/web/2016
 ### Purpose: 
 The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set.
 ### Language: 
-R (caret, rattle, corrplot, ...)
+R (caret)
 ### Approach:
 Decision trees, ranndom forest, generalized boosted regression
 ### Learning outcome:
