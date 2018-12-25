@@ -12,3 +12,6 @@ The goal of your project is to predict the manner in which they did the exercise
 R (caret, rattle, corrplot, ...)
 ### Approach:
 Decision trees, ranndom forest, generalized boosted regression
+### Learning outcome:
+- Decision Trees (87.9% accuracy), Random Forest (99.9% accuracy), Generalized Boosted Regression (99.6% accuracy)
+- Random Forest is the most accurate algorithm for the dataset among the applied three algorithm
