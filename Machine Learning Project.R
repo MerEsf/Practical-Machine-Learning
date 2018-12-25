@@ -1,6 +1,6 @@
-# Load required libraries
+# Loading required libraries
 library("caret")
-
+library("rattle")
 # Acess to the data
 
 if(!file.exists("pml-training.csv")){download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile = "pml-training.csv")}
@@ -87,3 +87,8 @@ gbmPredTest <- predict(gbmFit1, newdata=myTesting)
 gbmAccuracyTest <- confusionMatrix(gbmPredTest, myTesting$classe)
 gbmAccuracyTest
 plot(gbmFit1, ylim=c(0.9, 1))
+
+# applying the most accurate algorithm (RF)
+
+FinalTestPred <- predict(model_RF,newdata=validation)
+FinalTestPred
